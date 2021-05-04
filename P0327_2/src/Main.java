@@ -1,0 +1,14 @@
+import framework.*;
+import idcard.*;
+
+public class Main {
+	public static void main(String[] args) {
+		Factory factory = new IDCardFactory();
+		Product c1 = factory.create("±èÇöÁö");	// »ý¼º
+		Product c2 = factory.create("±èÇàº¹");
+		Product c3 = factory.create("È«±æµ¿");
+		c1.use();	// »ç¿ë
+		c2.use();
+		c3.use();
+	}
+}
